@@ -113,6 +113,35 @@ A modern Streamlit-based frontend is included for easy interaction with the MCPA
 
 ---
 
+## Model Context Protocol (MCP) Integration
+
+The MCPAgent project now includes full Model Context Protocol (MCP) server functionality, allowing AI assistants to discover and use research tools programmatically.
+
+### MCP Server Features
+
+The MCP server exposes the following tools to AI assistants:
+
+- **`create_research_task`** - Create a new research task with a query
+- **`list_research_tasks`** - List all existing research tasks
+- **`update_research_task`** - Update the status or result of a research task
+- **`analyze_content`** - Analyze content using Llama 3.2
+
+### How to Use with AI Assistants
+
+1. **Configure MCP Client**: Add the `mcp_config.json` to your AI assistant's MCP configuration
+2. **Connect to Server**: The AI assistant will automatically discover and connect to the MCP server
+3. **Use Research Tools**: AI assistants can now create research tasks, list results, and analyze content
+
+### Running the MCP Server
+
+```sh
+python app/mcp_server.py
+```
+
+The MCP server runs independently of the FastAPI backend and Streamlit frontend, providing a standardized interface for AI assistants to interact with your research capabilities.
+
+---
+
 ## Example Usage
 
 - Submit a research query and see the LLM-generated scraping strategy

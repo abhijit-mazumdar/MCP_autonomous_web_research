@@ -2,4 +2,5 @@ fastapi
 SQLAlchemy
 aiosqlite
 requests
-streamlit 
+streamlit
+mcp 

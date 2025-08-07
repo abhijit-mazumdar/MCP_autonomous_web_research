@@ -62,7 +62,7 @@ graph TD
 
 ---
 
-## Directory Structure (Suggested)
+## Directory Structure
 
 ```
 MCPAgent/
